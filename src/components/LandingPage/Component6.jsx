@@ -2,7 +2,7 @@ export default function Component6(){
     return (
         <>
             <section className="bg-dark position-relative price-wrap" data-bs-theme="dark">
-  <figure className="position-absolute top-0 start-0 ms-n9">
+  <figure className="position-absolute top-0 start-0 ms-n9" style={{transform:"translate(-120px,-120px)" , opacity:0.2}}>
     <svg
       className="opacity-2"
       width={424}
@@ -33,12 +33,13 @@ export default function Component6(){
       </defs>
     </svg>
   </figure>
+ 
   <div className="container position-relative ">
     <div className="row g-4 g-lg-6">
       <div className="col-xl-4">
-        <span className="text-success fw-bold text-uppercase">Pricing</span>
+        <span className=" fw-bold text-uppercase" style={{color:'rgb(9, 184, 80) !important'}}>Pricing</span>
         <h2 className="mb-4 mt-3" style={{ color: "white" }}>
-          <b>Budget-friendly pricing solutions</b>
+          <b>Budget-friendly <br />pricing solutions</b>
         </h2>
         <p className="mb-5" style={{ color: "white" }}>
           {" "}
@@ -47,9 +48,9 @@ export default function Component6(){
           needs.{" "}
         </p>
         <form className="d-flex align-items-center">
-          <span className="fw-semibold heading-color">Monthly</span>
+          <span className="fw-semibold heading-color text-light">Monthly</span>
           <div
-            className="form-check form-switch form-check-lg mx-2 mb-0"
+            className="form-check form-switch form-check-lg mx-2 mb-1"
             style={{
               display: "flex",
               flexDirection: "column",
@@ -64,7 +65,7 @@ export default function Component6(){
             />
           </div>
           <div className="position-relative">
-            <span className="fw-semibold heading-color">Yearly</span>
+            <span className="fw-semibold heading-color text-light">Yearly</span>
             <span className="badge bg-danger position-absolute top-0 start-100 translate-middle mt-n2 ms-2 ms-md-5">
               20% save
             </span>
@@ -74,7 +75,7 @@ export default function Component6(){
       <div className="col-md-6 col-xl-4">
         <div
           className="card p-4 p-sm-5  "
-          style={{ backgroundColor: "rgba(255, 255, 255, 0.116)" }}
+          style={{ backgroundColor: "rgb(41, 42, 45)", border:"none" }}
         >
           {/**/}
           {/**/}
@@ -138,12 +139,12 @@ export default function Component6(){
       </div>
       {/**/}
       <div className="col-md-6 col-xl-4">
-        <div className="card p-4 p-sm-5 mb-3">
+        <div className="card p-4 p-sm-5 mb-3" style={{border:"none" , backgroundColor:"rgb(25, 27, 29"}}>
           {/**/}
           {/**/}
           {/**/}
           <h5>Boss mode</h5>
-          <p className="small mb-0">
+          <p className="small mb-1" >
             In no impression, assistance contrasted Manners she wishing justice.
           </p>
           <hr className="my-4" />
@@ -151,12 +152,12 @@ export default function Component6(){
             Quick look at all the features
           </p>
           <ul className="list-group list-group-borderless mb-2 mb-sm-4">
-            <li className="list-group-item d-flex small mb-0">
+            <li className=" d-flex small mb-1">
               <svg
                 width="1em"
                 height="1em"
                 viewBox="0 0 16 16"
-                fill="green"
+                fill="rgb(9, 184, 80)"
                 role="img"
                 focusable="false"
                 className="text-primary me-1 mt-1"
@@ -165,12 +166,12 @@ export default function Component6(){
               </svg>
               Unlimited monthly visitors
             </li>
-            <li className="list-group-item d-flex small mb-0">
+            <li className=" d-flex small mb-1">
               <svg
                 width="1em"
                 height="1em"
                 viewBox="0 0 16 16"
-                fill="green"
+                fill="rgb(9, 184, 80)"
                 role="img"
                 focusable="false"
                 className="text-primary me-1 mt-1"
@@ -179,12 +180,12 @@ export default function Component6(){
               </svg>
               Dedicated SEO strategists
             </li>
-            <li className="list-group-item d-flex small mb-0">
+            <li className=" d-flex small mb-1">
               <svg
                 width="1em"
                 height="1em"
                 viewBox="0 0 16 16"
-                fill="green"
+                fill="rgb(9, 184, 80)"
                 role="img"
                 focusable="false"
                 className="text-primary me-1 mt-1"
@@ -193,12 +194,12 @@ export default function Component6(){
               </svg>
               Google Docs style editors
             </li>
-            <li className="list-group-item d-flex small mb-0">
+            <li className=" d-flex small mb-1">
               <svg
                 width="1em"
                 height="1em"
                 viewBox="0 0 16 16"
-                fill="green"
+                fill="rgb(9, 184, 80)"
                 role="img"
                 focusable="false"
                 className="text-primary me-1 mt-1"
@@ -207,12 +208,12 @@ export default function Component6(){
               </svg>
               Basic chat and email support
             </li>
-            <li className="list-group-item d-flex small mb-0">
+            <li className=" d-flex small mb-1">
               <svg
                 width="1em"
                 height="1em"
                 viewBox="0 0 16 16"
-                fill="green"
+                fill="rgb(9, 184, 80)"
                 role="img"
                 focusable="false"
                 className="text-primary me-1 mt-1"
@@ -235,7 +236,7 @@ export default function Component6(){
               width="1em"
               height="1em"
               viewBox="0 0 16 16"
-              fill="green"
+              fill="rgb(9, 184, 80)"
               role="img"
               focusable="false"
             >

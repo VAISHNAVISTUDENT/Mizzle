@@ -48,46 +48,35 @@ export default function Home() {
     id="content1"
   >
     <div className="container pb-6 position-relative mb-5">
-      <div className="inner-container-small text-center mb-4 mb-sm-5">
-        <span className="text-success fw-bold text-uppercase">Features</span>
+      <div className="inner-container-small text-center mb-4 mb-sm-5 mt-5">
+        <span className="text-success fw-bold text-uppercase " style={{color:'rgb(9, 184, 80) !important'}}>Features</span>
         <h2 className="mb-0 mt-3 text-light">
-          Powerful SaaS features for your agency
+         <b> Powerful SaaS features for your <br /> agency</b>
         </h2>
       </div>
       <div className="row mb-1">
         <div className="col-lg-10 col-xl-8 col-xxl-6 mx-auto mb-6 mb-xl-8">
-          <div className="bg-light rounded-pill p-2 mb-3">
-            <ul className="nav nav-pills nav-pills-success nav-responsive justify-content-between">
+          <div className="bg-dark rounded-pill p-2 mb-3" style={{backgroundColor:"#00000041 !important" }} >
+            <ul className="nav nav-pills nav-pills-success nav-responsive justify-content-between" >
               <li className="nav-item" role="presentation">
                 <button
                   className=" toggle-div text-light nav-link rounded-pill icons-center active"
-                  style={{ backgroundColor: "green !important" }}
+                  style={{ backgroundColor: "rgb(9, 184, 80) !important" }}
                   id="div1 pills-analytics-tab"
                 >
-                  <svg
-                    width="1em"
-                    height="1em"
-                    viewBox="0 0 16 16"
-                    fill="white"
-                    role="img"
-                    focusable="false"
-                    className="me-2"
-                  >
-                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"></path>
-                  </svg>
                   Analytics{" "}
                 </button>
               </li>
               <li className=" text-light nav-item" role="presentation">
                 <button
-                  className="toggle-div nav-link rounded-pill icons-center text-success"
+                  className="toggle-div nav-link rounded-pill icons-center text-success hover-change" style={{color:'rgb(9, 184, 80) !important'}}
                   id="div2"
                 >
                   <svg
                     width="1em"
                     height="1em"
                     viewBox="0 0 16 16"
-                    fill="green"
+                    fill="rgb(9, 184, 80)"
                     role="img"
                     focusable="false"
                     className="me-2"
@@ -105,14 +94,14 @@ export default function Home() {
                   Coming soon
                 </span>
                 <button
-                  className="nav-link rounded-pill icons-center text-success"
+                  className="nav-link rounded-pill icons-center text-success" style={{color:'rgb(9, 184, 80) !important'}}
                   id="pills-automation-tab"
                 >
                   <svg
                     width="1em"
                     height="1em"
                     viewBox="0 0 16 16"
-                    fill="green"
+                    fill="rgb(9, 184, 80)"
                     role="img"
                     focusable="false"
                     className="me-2"
@@ -125,14 +114,14 @@ export default function Home() {
               </li>
               <li className=" text-light nav-item" role="presentation">
                 <button
-                  className="nav-link rounded-pill icons-center text-success"
+                  className="nav-link rounded-pill icons-center text-success" style={{color:'rgb(9, 184, 80) !important'}}
                   id="pills-scalability-tab"
                 >
                   <svg
                     width="1em"
                     height="1em"
                     viewBox="0 0 16 16"
-                    fill="green"
+                    fill="rgb(9, 184, 80)"
                     role="img"
                     focusable="false"
                     className="me-2"
@@ -144,6 +133,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          <br />
         </div>
         <div className="col-11 mx-auto">
           <div className="tab-content" id="pills-tabContent">
@@ -156,7 +146,7 @@ export default function Home() {
             >
               <div className="row align-items-center">
                 <div className="col-lg-6 mb-6 mb-lg-0">
-                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2">
+                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2" style={{color:'rgb(9, 184, 80) !important'}}>
                     Analytics
                   </span>
                   <h3 className="my-4 text-light">
@@ -167,44 +157,44 @@ export default function Home() {
                     Gain valuable insights into your digital campaigns with our
                     comprehensive data analytics and reporting feature.{" "}
                   </p>
-                  <ul className="list-group list-group-borderless mb-4">
-                    <li className="text-light list-group-item heading-color mb-0 icons-center">
+                  <ul className="mb-4">
+                    <li className="text-light list-group-item heading-color mb-1 icons-center">
                       <svg
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
-                        fill="green"
+                        fill="gray"
                         role="img"
                         focusable="false"
-                        className="text-success me-2"
+                        className="text-success me-2" style={{color:'rgb(9, 184, 80) !important'}}
                       >
                         <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"></path>
                       </svg>
                       Actionable recommendations{" "}
                     </li>
-                    <li className="list-group-item heading-color mb-0 icons-center">
+                    <li className="list-group-item text-light heading-color mb-1 icons-center">
                       <svg
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
-                        fill="green"
+                        fill="gray"
                         role="img"
                         focusable="false"
-                        className="text-success me-2"
+                        className="text-success me-2" style={{color:'rgb(9, 184, 80) !important'}}
                       >
                         <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"></path>
                       </svg>
                       Cross-channel analysis{" "}
                     </li>
-                    <li className="list-group-item heading-color mb-0 icons-center">
+                    <li className="list-group-item heading-color text-light mb-0 icons-center">
                       <svg
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
-                        fill="green"
+                        fill="gray"
                         role="img"
                         focusable="false"
-                        className="text-success me-2"
+                        className="text-success me-2" style={{color:'rgb(9, 184, 80) !important'}}
                       >
                         <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"></path>
                       </svg>
@@ -212,7 +202,7 @@ export default function Home() {
                     </li>
                   </ul>
                   <a
-                    className="btn btn-white icon-link icon-link-hover"
+                    className="btn btn-light"
                     href="#"
                   >
                     Explore analytics{" "}
@@ -220,7 +210,7 @@ export default function Home() {
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
-                      fill="green"
+                      fill="black"
                       role="img"
                       focusable="false"
                       className="bi"
@@ -270,14 +260,14 @@ export default function Home() {
                     </ul>
                   </div>
                   <div
-                    className="card position-absolute bottom-0 start-0 ms-lg-n8 mb-n5"
-                    style={{ transform: "translate(-50px, 50px)" }}
+                    className="card position-absolute bottom-0 mb-3 start-0 ms-lg-n8 mb-n5"
+                    style={{ transform: "translate(-50px, 50px)",border:'none !important' ,backgroundColor:"rgb(25, 27, 29) !important" }}
                   >
                     {" "}
                     {/**/}
                     {/**/}
                     {/**/}
-                    <div className="card-body">
+                    <div className="card-body " style={{border:'none !important'}}>
                       {/**/}
                       {/**/}
                       <p>Our lovely customers</p>
@@ -335,13 +325,13 @@ export default function Home() {
                           <small>Satisfaction Rate</small>
                           <small>80%</small>
                         </div>
-                        <div className="progress progress-sm bg-success bg-opacity-10">
+                        <div className="progress progress-sm bg-success bg-opacity-10" style={{height:10 }}>
                           <div
                             className="progress-bar"
                             role="progressbar"
                             aria-valuenow={80}
                             aria-valuemin={0}
-                            style={{ width: "80%" }}
+                            style={{ width: "80%",height:10 , backgroundColor:"rgb(9, 184, 80)"}}
                           />
                         </div>
                       </div>
@@ -359,7 +349,7 @@ export default function Home() {
             >
               <div className="row align-items-center">
                 <div className="col-lg-6 mb-6 mb-lg-0">
-                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2 ">
+                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2 " style={{color:'rgb(9, 184, 80) !important'}}>
                     Collaboration
                   </span>
                   <h3 className="my-4">
@@ -377,10 +367,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path
                             fillRule="evenodd"
@@ -394,10 +384,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"></path>
                         </svg>
@@ -410,10 +400,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path>
                         </svg>
@@ -424,10 +414,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"></path>
                           <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"></path>
@@ -437,7 +427,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="btn btn-white icon-link icon-link-hover"
+                    className="btn btn-light"
                     href="#"
                   >
                     Explore collaboration benefits{" "}
@@ -445,7 +435,7 @@ export default function Home() {
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
-                      fill="green"
+                      fill="black"
                       role="img"
                       focusable="false"
                     >
@@ -457,15 +447,15 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="col-lg-4 position-relative ms-auto">
-                  <div className="col-md-8 position-absolute top-50 start-0 translate-middle mt-xl-n9 d-none d-lg-block">
-                    <div className="bg-body rounded p-3">
+                  <div className="col-md-8 position-absolute top-50 start-0 translate-middle mt-xl-n9 d-none d-lg-block" style={{backgroundColor:"rgb(25, 27, 29) !important"}}>
+                    <div className="bg-body rounded p-3 " >
                       <div className="bg-light d-flex align-items-center rounded w-100 p-2 mb-3">
-                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0">
+                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0" style={{color:'rgb(9, 184, 80) !important',}}>
                           <svg
                             width="1em"
                             height="1em"
                             viewBox="0 0 16 16"
-                            fill="green"
+                            fill="rgb(9, 184, 80)"
                             role="img"
                             focusable="false"
                             className="fs-5"
@@ -484,7 +474,7 @@ export default function Home() {
                             width="1em"
                             height="1em"
                             viewBox="0 0 16 16"
-                            fill="green"
+                            fill="rgb(9, 184, 80)"
                             role="img"
                             focusable="false"
                             className="fs-5"
@@ -502,7 +492,7 @@ export default function Home() {
                             width="1em"
                             height="1em"
                             viewBox="0 0 16 16"
-                            fill="green"
+                            fill="rgb(9, 184, 80)"
                             role="img"
                             focusable="false"
                             className="fs-5"
@@ -554,27 +544,27 @@ export default function Home() {
     id="content2"
     data-bs-theme="dark"
   >
-    <div className="container pb-6 position-relative mb-5">
+    <div className="container pb-6 position-relative mb-5 mt-5">
       <div className="inner-container-small text-center mb-4 mb-sm-5">
-        <span className="text-success fw-bold text-uppercase">Features</span>
+        <span className="text-success fw-bold text-uppercase" style={{color:'rgb(9, 184, 80) !important'}}>Features</span>
         <h2 className="mb-0 mt-3 text-light">
-          Powerful SaaS features for your agency
+          <b>Powerful SaaS features for your <br /> agency</b>
         </h2>
       </div>
       <div className="row">
         <div className="col-lg-10 col-xl-8 col-xxl-6 mx-auto mb-6 mb-xl-8">
-          <div className="bg-light rounded-pill p-2 mb-3">
+          <div className="bg-dark rounded-pill p-2 mb-3" style={{backgroundColor:"#00000041 !important"}}>
             <ul className="nav nav-pills nav-pills-success nav-responsive justify-content-between">
               <li className="nav-item" role="presentation">
                 <button
                   id="div1"
-                  className="toggle-div nav-link rounded-pill icons-center text-success"
+                  className="toggle-div nav-link rounded-pill icons-center text-success " style={{color:'rgb(9, 184, 80) !important'}}
                 >
                   <svg
                     width="1em"
                     height="1em"
                     viewBox="0 0 16 16"
-                    fill="green"
+                    fill="rgb(9, 184, 80)"
                     role="img"
                     focusable="false"
                     className="me-2"
@@ -587,7 +577,7 @@ export default function Home() {
               <li className="nav-item" role="presentation">
                 <button
                   className="nav-link rounded-pill icons-center active toggle-div"
-                  style={{ backgroundColor: "green !important" }}
+                  style={{ backgroundColor: "rgb(9, 184, 80) !important" }}
                   id="div2"
                 >
                   <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"></path>
@@ -599,14 +589,14 @@ export default function Home() {
                   Coming soon
                 </span>
                 <button
-                  className="nav-link rounded-pill icons-center text-success"
+                  className="nav-link rounded-pill icons-center text-success" style={{color:'rgb(9, 184, 80) !important'}}
                   id="pills-automation-tab"
                 >
                   <svg
                     width="1em"
                     height="1em"
                     viewBox="0 0 16 16"
-                    fill="green"
+                    fill="rgb(9, 184, 80)"
                     role="img"
                     focusable="false"
                     className="me-2"
@@ -619,14 +609,14 @@ export default function Home() {
               </li>
               <li className="nav-item" role="presentation">
                 <button
-                  className="nav-link rounded-pill icons-center text-success"
+                  className="nav-link rounded-pill icons-center text-success" style={{color:'rgb(9, 184, 80) !important'}}
                   id="pills-scalability-tab"
                 >
                   <svg
                     width="1em"
                     height="1em"
                     viewBox="0 0 16 16"
-                    fill="green"
+                    fill="rgb(9, 184, 80)"
                     role="img"
                     focusable="false"
                     className="me-2"
@@ -638,6 +628,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          <br />
         </div>
         <br />
         <br />
@@ -653,7 +644,7 @@ export default function Home() {
             >
               <div className="row align-items-center">
                 <div className="col-lg-6 mb-6 mb-lg-0">
-                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2">
+                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2" style={{color:'rgb(9, 184, 80) !important'}}>
                     Analytics
                   </span>
                   <h3 className="my-4">
@@ -670,10 +661,10 @@ export default function Home() {
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
-                        fill="green"
+                        fill="rgb(9, 184, 80)"
                         role="img"
                         focusable="false"
-                        className="text-success me-2"
+                        className="text-success me-2" style={{color:'rgb(9, 184, 80) !important'}}
                       >
                         <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"></path>
                       </svg>
@@ -684,10 +675,10 @@ export default function Home() {
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
-                        fill="green"
+                        fill="rgb(9, 184, 80)"
                         role="img"
                         focusable="false"
-                        className="text-success me-2"
+                        className="text-success me-2" style={{color:'rgb(9, 184, 80) !important'}}
                       >
                         <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"></path>
                       </svg>
@@ -698,18 +689,18 @@ export default function Home() {
                         width="1em"
                         height="1em"
                         viewBox="0 0 16 16"
-                        fill="green"
+                        fill="rgb(9, 184, 80)"
                         role="img"
                         focusable="false"
-                        className="text-success me-2"
+                        className="text-success me-2" style={{color:'rgb(9, 184, 80) !important'}}
                       >
                         <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"></path>
                       </svg>
                       User-friendly interface{" "}
                     </li>
                   </ul>
-                  <a
-                    className="btn btn-white icon-link icon-link-hover"
+                  <button
+                    className="btn btn-light "
                     href="#"
                   >
                     Explore analytics
@@ -717,7 +708,7 @@ export default function Home() {
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
-                      fill="green"
+                      fill="white"
                       role="img"
                       focusable="false"
                       className="bi"
@@ -727,8 +718,9 @@ export default function Home() {
                         d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
                       ></path>
                     </svg>
-                  </a>
+                  </button>
                 </div>
+
                 <div className="col-lg-4 position-relative ms-auto">
                   <img
                     src="/mizzle_ng/assets/14-3UdHBCP2.jpg"
@@ -754,11 +746,11 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                  <div className="card position-absolute bottom-0 start-0 ms-lg-n8 mb-n5">
+                  <div className="card position-absolute bottom-0 start-0 ms-lg-n8 mb-n5" >
                     {/**/}
                     {/**/}
                     {/**/}
-                    <div className="card-body">
+                    <div className="card-body" style={{border:'none !important'}} >
                       {/**/}
                       {/**/}
                       <p>Our lovely customers</p>
@@ -811,8 +803,8 @@ export default function Home() {
                         <div
                           className="progress progress-sm bg-success bg-opacity-10"
                           style={{
-                            backgroundColor: "green !important",
-                            color: "green !important"
+                            backgroundColor: "rgb(9, 184, 80) !important",
+                            color: "rgb(9, 184, 80) !important"
                           }}
                         >
                           <div
@@ -822,8 +814,8 @@ export default function Home() {
                             aria-valuemin={0}
                             style={{
                               width: "80%",
-                              backgroundColor: "green !important",
-                              color: "green !important"
+                              backgroundColor: "rgb(9, 184, 80) !important",
+                              color: "rgb(9, 184, 80) !important"
                             }}
                           />
                         </div>
@@ -842,7 +834,7 @@ export default function Home() {
             >
               <div className="row align-items-center">
                 <div className="col-lg-6 mb-6 mb-lg-0">
-                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2">
+                  <span className="bg-success bg-opacity-10 text-success text-uppercase rounded small px-3 py-2" style={{color:'rgb(9, 184, 80) !important'}}>
                     Collaboration
                   </span>
                   <h3 className="my-4 text-light">
@@ -860,10 +852,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path
                             fillRule="evenodd"
@@ -877,10 +869,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z"></path>
                         </svg>
@@ -893,10 +885,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"></path>
                         </svg>
@@ -907,10 +899,10 @@ export default function Home() {
                           width="1em"
                           height="1em"
                           viewBox="0 0 16 16"
-                          fill="green"
+                          fill="rgb(9, 184, 80)"
                           role="img"
                           focusable="false"
-                          className="fa-xl text-success me-3"
+                          className="fa-xl text-success me-3" style={{color:'rgb(9, 184, 80) !important'}}
                         >
                           <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"></path>
                           <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"></path>
@@ -920,7 +912,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="btn btn-white icon-link icon-link-hover"
+                    className="btn btn-light"
                     href="#"
                   >
                     Explore collaboration benefits{" "}
@@ -928,7 +920,7 @@ export default function Home() {
                       width="1em"
                       height="1em"
                       viewBox="0 0 16 16"
-                      fill="green"
+                      fill="black"
                       role="img"
                       focusable="false"
                     >
@@ -943,15 +935,15 @@ export default function Home() {
                   <div className="col-md-8 position-absolute top-50 start-0 translate-middle mt-xl-n9 d-none d-lg-block">
                     <div
                       className="bg-body rounded p-3"
-                      style={{ transform: "translate(0px -100px) !important" }}
+                      style={{ transform: "translate(0px -100px) !important" , backgroundColor:"rgb(25, 27, 0 !important" }} 
                     >
                       <div className="bg-light d-flex align-items-center rounded w-100 p-2 mb-3">
-                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0">
+                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0" style={{color:'rgb(9, 184, 80) !important'}}>
                           <svg
                             width="1em"
                             height="1em"
                             viewBox="0 0 16 16"
-                            fill="green"
+                            fill="rgb(9, 184, 80)"
                             role="img"
                             focusable="false"
                             className="fs-5"
@@ -965,12 +957,12 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="bg-light d-flex align-items-center rounded w-100 p-2 mb-3">
-                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0">
+                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0" style={{color:'rgb(9, 184, 80) !important'}}>
                           <svg
                             width="1em"
                             height="1em"
                             viewBox="0 0 16 16"
-                            fill="green"
+                            fill="rgb(9, 184, 80)"
                             role="img"
                             focusable="false"
                             className="fs-5"
@@ -983,12 +975,12 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="bg-light d-flex align-items-center rounded w-100 p-2">
-                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0">
+                        <div className="icon-md bg-success flex-centered bg-opacity-10 rounded-circle text-success flex-shrink-0" style={{color:'rgb(9, 184, 80) !important'}}>
                           <svg
                             width="1em"
                             height="1em"
                             viewBox="0 0 16 16"
-                            fill="green"
+                            fill="rgb(9, 184, 80)"
                             role="img"
                             focusable="false"
                             className="fs-5"

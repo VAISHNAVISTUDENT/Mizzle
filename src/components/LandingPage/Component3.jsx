@@ -1,14 +1,14 @@
 export default function Component3(){
     return (
         <>
-            <section className="pb-0 overflow-hidden" style={{ margin: 10 }}>
+        <section className="pb-0 overflow-hidden mt-5" style={{ margin: 10 }}>
   <div className="container">
     <div className="inner-container-small text-center mb-4 mb-sm-6">
-      <span className="text-success fw-bold text-uppercase">How it works</span>
-      <h2 className="mb-0 mt-3">Unlocking your agency's potential</h2>
+      <span className="text-success fw-bold text-uppercase" style={{color:'rgb(9, 184, 80) !important'}}>How it works</span>
+      <h2 className="mb-0 mt-3"><b>Unlocking your agency's <br /> potential</b></h2>
     </div>
     <div className="row">
-      <div className="col-xl-10 mx-auto">
+      <div className="col-xl-10 ">
         <div
           className="row flex-lg-nowrap align-items-center position-relative mb-8"
           style={{ padding: "0rem !important" }}
@@ -188,7 +188,7 @@ export default function Component3(){
             </div>
           </div>
           <div className="col-lg-7 order-1 order-lg-2">
-            <div className="bg-light rounded py-7 px-5 pe-md-6 ps-md-8">
+            <div className="bg-light rounded py-7 px-5 pe-md-6 ps-md-8" >
               <div
                 className="icon-lg bg-body rounded-circle fw-bold heading-color mb-3"
                 style={{ height: 30, width: 30, padding: 5, margin: 10 }}
