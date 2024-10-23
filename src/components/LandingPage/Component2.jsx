@@ -202,7 +202,7 @@ export default function Home() {
                     </li>
                   </ul>
                   <a
-                    className="btn btn-light"
+                    className="btn btn-light mb-3"
                     href="#"
                   >
                     Explore analytics{" "}
@@ -229,7 +229,7 @@ export default function Home() {
                     alt="feature-img"
                   />
                   <div
-                    className="bg-white rounded d-flex align-items-center position-absolute top-0 end-0 mt-n5 px-3 py-2"
+                    className="bg-white rounded d-flex align-items-center position-absolute top-0 end-0 mt-n5 px-3 py-2 responsive-element"
                     style={{
                       display: "flex",
                       flexDirection: "row",
@@ -1040,6 +1040,11 @@ export default function Home() {
     .visible {
     display: block !important;
       }
+    @media (max-width: 700px) {
+  .responsive-element {
+    display: none;
+  }
+}
       `}</style>
     </div>
   );
