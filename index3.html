@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col-lg-10 col-xl-8 col-xxl-6 mx-auto mb-6 mb-xl-8">
+            <div class="bg-light rounded-pill p-2">
+                <ul class="nav nav-pills nav-pills-primary nav-responsive justify-content-between">
+                    <li class="nav-item" role="presentation"><button class="nav-link rounded-pill icons-center"
+                            id="pills-analytics-tab"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" role="img" focusable="false" class="me-2">
+                                <path
+                                    d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z">
+                                </path>
+                            </svg>Analytics </button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link rounded-pill icons-center active"
+                            id="pills-collaboration-tab"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" role="img" focusable="false" class="me-2">
+                                <path
+                                    d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5">
+                                </path>
+                            </svg>Collaboration </button></li>
+                    <li class="nav-item position-relative" role="presentation"><span
+                            class="badge text-bg-danger position-absolute top-0 start-100 translate-middle mt-n2 ms-n5 d-none d-lg-block">Coming
+                            soon</span><button class="nav-link rounded-pill icons-center" id="pills-automation-tab"><svg
+                                width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" role="img"
+                                focusable="false" class="me-2">
+                                <path
+                                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0">
+                                </path>
+                                <path
+                                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z">
+                                </path>
+                            </svg>Automation </button></li>
+                    <li class="nav-item" role="presentation"><button class="nav-link rounded-pill icons-center"
+                            id="pills-scalability-tab"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                fill="currentColor" role="img" focusable="false" class="me-2">
+                                <path
+                                    d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793zm1 0V7.5h6.482A7 7 0 0 0 8.5 1.018M14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8">
+                                </path>
+                            </svg>Scalability </button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-11 mx-auto">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" id="pills-analytics" role="tabpanel" aria-labelledby="pills-analytics-tab"
+                    tabindex="0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-6 mb-lg-0"><span
+                                class="bg-primary bg-opacity-10 text-primary text-uppercase rounded small px-3 py-2">Analytics</span>
+                            <h3 class="my-4">Comprehensive data analytics and reporting</h3>
+                            <p> Gain valuable insights into your digital campaigns with our comprehensive data analytics
+                                and reporting feature. </p>
+                            <ul class="list-group list-group-borderless mb-4">
+                                <li class="list-group-item heading-color mb-0 icons-center"><svg width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor" role="img"
+                                        focusable="false" class="text-primary me-2">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>Actionable recommendations </li>
+                                <li class="list-group-item heading-color mb-0 icons-center"><svg width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor" role="img"
+                                        focusable="false" class="text-primary me-2">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>Cross-channel analysis </li>
+                                <li class="list-group-item heading-color mb-0 icons-center"><svg width="1em"
+                                        height="1em" viewBox="0 0 16 16" fill="currentColor" role="img"
+                                        focusable="false" class="text-primary me-2">
+                                        <path
+                                            d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708">
+                                        </path>
+                                    </svg>User-friendly interface </li>
+                            </ul><a class="btn btn-white icon-link icon-link-hover" href="#">Explore analytics <svg
+                                    width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" role="img"
+                                    focusable="false" class="bi">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="col-lg-4 position-relative ms-auto">
+                            <figure class="position-absolute top-0 start-0 ms-n5 mt-n5"><svg class="opacity-2"
+                                    width="148" height="140" viewBox="0 0 148 140" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="fill-primary"
+                                        d="m9.95 131.41c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <circle class="fill-primary" cx="25.86" cy="131.41" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="44.71" cy="131.41" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="63.57" cy="131.41" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="82.43" cy="131.41" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="101.29" cy="131.41" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="120.14" cy="131.41" r="2.95"></circle>
+                                    <path class="fill-primary"
+                                        d="m141.95 131.41c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m9.95 113.61c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <circle class="fill-primary" cx="25.86" cy="113.61" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="44.71" cy="113.61" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="63.57" cy="113.61" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="82.43" cy="113.61" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="101.29" cy="113.61" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="120.14" cy="113.61" r="2.95"></circle>
+                                    <path class="fill-primary"
+                                        d="m141.95 113.61c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m9.95 95.81c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <circle class="fill-primary" cx="25.86" cy="95.81" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="44.71" cy="95.81" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="63.57" cy="95.81" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="82.43" cy="95.81" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="101.29" cy="95.81" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="120.14" cy="95.81" r="2.95"></circle>
+                                    <path class="fill-primary"
+                                        d="m141.95 95.81c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m9.95 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m28.8 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m47.66 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m66.52 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m85.37 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m104.23 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m123.09 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m141.95 78.01c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m9.95 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m28.8 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m47.66 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m66.52 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m85.37 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m104.23 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m123.09 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m141.95 60.22c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m9.95 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m28.8 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m47.66 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m66.52 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m85.37 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.64 0 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m104.23 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m123.09 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m141.95 42.42c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m9.95 24.62c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <circle class="fill-primary" cx="25.86" cy="24.62" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="44.71" cy="24.62" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="63.57" cy="24.62" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="82.43" cy="24.62" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="101.29" cy="24.62" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="120.14" cy="24.62" r="2.95"></circle>
+                                    <path class="fill-primary"
+                                        d="m141.95 24.62c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95 2.95 1.32 2.95 2.95z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="m9.95 6.82c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95c0-1.62 1.32-2.94 2.95-2.94s2.95 1.32 2.95 2.94z">
+                                    </path>
+                                    <circle class="fill-primary" cx="25.86" cy="6.82" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="44.71" cy="6.82" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="63.57" cy="6.82" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="82.43" cy="6.82" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="101.29" cy="6.82" r="2.95"></circle>
+                                    <circle class="fill-primary" cx="120.14" cy="6.82" r="2.95"></circle>
+                                    <path class="fill-primary"
+                                        d="m141.95 6.82c0 1.63-1.32 2.95-2.95 2.95s-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95c1.63 0.01 2.95 1.33 2.95 2.95z">
+                                    </path>
+                                </svg></figure>
+                            <figure class="position-absolute bottom-0 end-0 z-index-1 mb-n6 me-n6 d-none d-lg-block">
+                                <svg width="167" height="107" viewBox="0 0 167 107" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="fill-white" clip-rule="evenodd"
+                                        d="M87.1132 1.04286L87.1128 1.04337C86.6896 1.55271 86.2787 2.04727 85.826 2.5C84.8049 3.40765 83.7918 4.32334 82.78 5.23795L82.7799 5.23803L82.7798 5.23811L82.7796 5.23823C80.2242 7.54807 77.6764 9.85101 75.026 12C61.626 22.5 48.226 33 34.926 43.5L9.12598 63.9L9.12586 63.9001C8.7259 64.2001 8.32595 64.5 8.02598 64.8C7.32598 65.4 6.52598 65.8 5.62598 65C4.82598 64.3 5.02598 63.3 5.52598 62.6C6.12598 61.6 6.92598 60.6 7.72598 59.8C8.20935 59.3606 8.69271 58.919 9.17671 58.4769L9.17678 58.4768L9.17686 58.4767L9.17698 58.4766C11.9972 55.9003 14.8387 53.3044 17.826 51C39.426 34.4 61.126 17.9 83.626 2.5C84.826 1.6 86.126 0.8 87.426 0C87.426 0 87.526 0.1 87.826 0.2C87.5789 0.482421 87.3442 0.764841 87.1132 1.04286ZM166.026 21.9C165.676 22.1 165.326 22.325 164.976 22.55C164.626 22.775 164.276 23 163.926 23.2C149.326 31.8 134.926 40.7 120.826 50.2C99.226 64.6 77.826 79.4 57.426 95.4C53.626 98.4 49.926 101.4 46.226 104.4C45.626 104.9 45.126 105.3 44.526 105.7C43.726 106.3 42.926 106.6 42.126 105.9C41.326 105.2 41.526 104.2 42.026 103.5C42.626 102.5 43.326 101.5 44.226 100.7L44.3458 100.59C46.8091 98.3235 49.3691 95.9681 52.026 94C82.426 71 113.626 49.5 146.926 31C150.726 28.8667 154.615 26.9111 158.504 24.9556C160.448 23.9778 162.393 23 164.326 22C164.826 21.8 165.326 21.6 165.726 21.4C165.826 21.5 165.926 21.7 166.026 21.9ZM99.926 8.5C100.626 8 101.226 7.4 101.826 6.8C101.726 6.7 101.626 6.6 101.326 6.5C100.626 7 99.926 7.525 99.226 8.05C98.526 8.575 97.826 9.1 97.126 9.6C93.0918 12.5088 89.0545 15.4176 85.0158 18.3275L85.0151 18.328C65.7284 32.224 46.4088 46.1436 27.226 60.2C21.8311 64.1042 16.7385 68.3108 11.6263 72.5336L11.6262 72.5336C9.53676 74.2595 7.44401 75.9882 5.32601 77.7C3.82601 78.9 2.52601 80.3 1.22601 81.7C0.726013 82.2 0.226013 82.8 0.026013 83.5C-0.073987 84 0.126013 84.7 0.426013 85C0.726013 85.3 1.52601 85.4 1.92601 85.2C2.72601 84.8 3.42601 84.3 4.12601 83.7C6.54336 81.7156 8.93467 79.7052 11.3234 77.6969C15.5554 74.139 19.7794 70.5878 24.126 67.2C34.7347 58.9552 45.3766 50.8101 56.0135 42.669L56.0143 42.6684L56.015 42.6678C63.8265 36.6891 71.6352 30.7125 79.426 24.7C86.3253 19.3005 93.1247 13.9011 99.924 8.50163L99.926 8.5ZM100.426 22C99.326 23 98.226 24 97.026 24.9C93.6956 27.4851 90.3598 30.0703 87.0224 32.6567L87.015 32.6624C76.0246 41.1795 65.0165 49.7104 54.126 58.3C47.6804 63.3921 41.3179 68.5672 34.9849 73.7183C31.4926 76.5588 28.0093 79.3921 24.526 82.2L24.526 82.2001C23.726 82.9 22.926 83.6 22.026 84.1C21.526 84.4 20.426 84.4 20.126 84.1C19.726 83.7 19.626 82.7 19.926 82.2C20.326 81.4 20.926 80.6 21.626 79.9C22.3148 79.2686 22.9953 78.629 23.6771 77.9883L23.6772 77.9882C25.3709 76.3963 27.0722 74.7973 28.926 73.3C48.926 57.5 69.126 42 90.226 27.7C92.5211 26.1427 94.9505 24.5853 97.2941 23.083L97.2943 23.0828C97.8098 22.7524 98.3212 22.4246 98.826 22.1C99.226 21.9 99.626 21.7 100.026 21.4C100.102 21.5146 100.164 21.6 100.217 21.6729L100.217 21.673C100.302 21.791 100.364 21.8764 100.426 22ZM107.355 35.4442C107.542 35.2315 107.732 35.0157 107.926 34.8C107.626 34.6 107.526 34.5 107.526 34.5L107.526 34.5001C106.026 35.6001 104.526 36.7 103.026 37.7C86.326 48.8 70.226 60.7 54.326 72.8C49.6261 76.2999 45.0262 79.8999 40.4262 83.4998L40.426 83.5C39.526 84.2 38.726 85 38.026 85.8C37.426 86.5 37.126 87.4 37.826 88.2C38.526 89.1 39.426 89 40.226 88.5C41.326 87.9 42.426 87.2 43.426 86.4C45.176 85 46.901 83.575 48.626 82.15C50.351 80.725 52.076 79.3 53.826 77.9C65.926 68.4 78.126 58.9 90.326 49.5L105.326 37.5C106.032 36.951 106.676 36.2175 107.355 35.4442Z">
+                                    </path>
+                                </svg></figure><img src="/mizzle_ng/assets/14-3UdHBCP2.jpg"
+                                class="rounded position-relative zindex-2" alt="feature-img">
+                            <div
+                                class="bg-white rounded d-flex align-items-center position-absolute top-0 end-0 mt-n5 px-3 py-2">
+                                <p class="text-dark fw-bold mb-0">Meeting with</p>
+                                <ul class="mb-0 align-items-center">
+                                    <li class="avatar avatar-xs me-1"><img class="avatar-img rounded-circle"
+                                            src="/mizzle_ng/assets/06-BH1nDwXy.jpg" alt="avatar"></li>
+                                    <li class="avatar avatar-xs"><img class="avatar-img rounded-circle"
+                                            src="/mizzle_ng/assets/05-CG31WkZY.jpg" alt="avatar"></li>
+                                </ul>
+                            </div>
+                            <div class="card position-absolute bottom-0 start-0 ms-lg-n8 mb-n5"><!----><!----><!---->
+                                <div class="card-body"><!----><!---->
+                                    <p>Our lovely customers</p>
+                                    <div class="d-flex align-items-center">
+                                        <ul class="avatar-group mb-0 align-items-center">
+                                            <li class="avatar avatar-xs"><img class="avatar-img rounded-circle"
+                                                    src="/mizzle_ng/assets/02-QpbjWlGB.jpg" alt="avatar"></li>
+                                            <li class="avatar avatar-xs"><img class="avatar-img rounded-circle"
+                                                    src="/mizzle_ng/assets/03-D3P3Mx3U.jpg" alt="avatar"></li>
+                                            <li class="avatar avatar-xs"><img class="avatar-img rounded-circle"
+                                                    src="/mizzle_ng/assets/04-qglPzAuR.jpg" alt="avatar"></li>
+                                            <li class="avatar avatar-xs"><img class="avatar-img rounded-circle"
+                                                    src="/mizzle_ng/assets/05-CG31WkZY.jpg" alt="avatar"></li>
+                                            <li class="avatar avatar-xs"><img class="avatar-img rounded-circle"
+                                                    src="/mizzle_ng/assets/06-BH1nDwXy.jpg" alt="avatar"></li>
+                                        </ul>
+                                        <h6 class="text-white mb-0 ms-2">5K+</h6>
+                                    </div>
+                                    <hr>
+                                    <div class="overflow-hidden">
+                                        <div class="d-flex justify-content-between mb-2"><small>Satisfaction
+                                                Rate</small><small>80%</small></div>
+                                        <div class="progress progress-sm bg-primary bg-opacity-10">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+                                </div><!----><!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade active show" id="pills-collaboration" tabindex="0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-6 mb-lg-0"><span
+                                class="bg-primary bg-opacity-10 text-primary text-uppercase rounded small px-3 py-2">Collaboration</span>
+                            <h3 class="my-4">Streamlined teamwork and client engagement</h3>
+                            <p class="mb-5"> Our collaboration feature empowers your agency with seamless teamwork and
+                                enhanced client engagement. </p>
+                            <div class="row g-4 mb-5">
+                                <div class="col-sm-6">
+                                    <p class="heading-color icons-center mb-3"><svg width="1em" height="1em"
+                                            viewBox="0 0 16 16" fill="currentColor" role="img" focusable="false"
+                                            class="fa-xl text-primary me-3">
+                                            <path fill-rule="evenodd"
+                                                d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5zM8.5 5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5zM0 11.5A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm4.5.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z">
+                                            </path>
+                                        </svg>Organized your data </p>
+                                    <p class="heading-color icons-center mb-0"><svg width="1em" height="1em"
+                                            viewBox="0 0 16 16" fill="currentColor" role="img" focusable="false"
+                                            class="fa-xl text-primary me-3">
+                                            <path
+                                                d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z">
+                                            </path>
+                                        </svg>Embedded Analytics </p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="heading-color icons-center mb-3"><svg width="1em" height="1em"
+                                            viewBox="0 0 16 16" fill="currentColor" role="img" focusable="false"
+                                            class="fa-xl text-primary me-3">
+                                            <path
+                                                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4">
+                                            </path>
+                                        </svg>Work with any team </p>
+                                    <p class="heading-color icons-center mb-0"><svg width="1em" height="1em"
+                                            viewBox="0 0 16 16" fill="currentColor" role="img" focusable="false"
+                                            class="fa-xl text-primary me-3">
+                                            <path
+                                                d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56">
+                                            </path>
+                                            <path
+                                                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0">
+                                            </path>
+                                        </svg>Collaborate securely </p>
+                                </div>
+                            </div><a class="btn btn-white icon-link icon-link-hover" href="#">Explore collaboration
+                                benefits <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                    role="img" focusable="false">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
+                                    </path>
+                                </svg></a>
+                        </div>
+                        <div class="col-lg-4 position-relative ms-auto">
+                            <div
+                                class="col-md-8 position-absolute top-50 start-0 translate-middle mt-xl-n9 d-none d-lg-block">
+                                <div class="bg-body rounded p-3">
+                                    <div class="bg-light d-flex align-items-center rounded w-100 p-2 mb-3">
+                                        <div
+                                            class="icon-md bg-primary flex-centered bg-opacity-10 rounded-circle text-primary flex-shrink-0">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                                role="img" focusable="false" class="fs-5">
+                                                <path
+                                                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
+                                                </path>
+                                            </svg></div>
+                                        <p class="heading-color mb-0 ms-2"> Than continues its and because can use. </p>
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center rounded w-100 p-2 mb-3">
+                                        <div
+                                            class="icon-md bg-primary flex-centered bg-opacity-10 rounded-circle text-primary flex-shrink-0">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                                role="img" focusable="false" class="fs-5">
+                                                <path
+                                                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
+                                                </path>
+                                            </svg></div>
+                                        <p class="heading-color mb-0 ms-2">Entire first decided the so must.</p>
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center rounded w-100 p-2">
+                                        <div
+                                            class="icon-md bg-primary flex-centered bg-opacity-10 rounded-circle text-primary flex-shrink-0">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                                role="img" focusable="false" class="fs-5">
+                                                <path
+                                                    d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z">
+                                                </path>
+                                            </svg></div>
+                                        <p class="heading-color mb-0 ms-2">Separated sort.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="d-inline-block bg-white shadow rounded-4 position-absolute end-0 bottom-0 p-3 mb-n5 me-lg-n6 d-none d-sm-block">
+                                <img src="/mizzle_ng/assets/trustpilot-CAtQVMCg.svg" class="h-20px mb-2"
+                                    alt="Client-img">
+                                <div class="d-flex align-items-center"><img
+                                        src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='utf-8'?%3e%3c!--%20Generator:%20Adobe%20Illustrator%2023.0.0,%20SVG%20Export%20Plug-In%20.%20SVG%20Version:%206.00%20Build%200)%20--%3e%3csvg%20version='1.1'%20id='Layer_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20x='0px'%20y='0px'%20width='200px'%20height='37.5px'%20viewBox='0%200%20200%2037.5'%20style='enable-background:new%200%200%20200%2037.5;'%20xml:space='preserve'%3e%3cstyle%20type='text/css'%3e%20.st0{fill:%2300B67A;}%20.st1{fill:%23FFFFFF;}%20%3c/style%3e%3cg%3e%3cg%3e%3cpath%20class='st0'%20d='M0,0h37.5v37.5H0V0z%20M40.6,0h37.5v37.5H40.6V0z%20M81.3,0h37.5v37.5H81.3V0z%20M121.9,0h37.5v37.5h-37.5V0z%20M162.5,0H200v37.5h-37.5V0z'/%3e%3c/g%3e%3cpath%20class='st1'%20d='M18.8,25.3l5.7-1.4l2.4,7.3L18.8,25.3z%20M31.9,15.8h-10l-3.1-9.5l-3.1,9.5h-10l8.1,5.9l-3.1,9.5l8.1-5.9l5-3.6%20L31.9,15.8z%20M59.4,25.3l5.7-1.4l2.4,7.3L59.4,25.3z%20M72.5,15.8h-10l-3.1-9.5l-3.1,9.5h-10l8.1,5.9l-3.1,9.5l8.1-5.9l5-3.6%20L72.5,15.8z%20M100,25.3l5.7-1.4l2.4,7.3L100,25.3z%20M113.1,15.8h-10L100,6.3l-3.1,9.5h-10l8.1,5.9l-3.1,9.5l8.1-5.9l5-3.6L113.1,15.8%20z%20M140.6,25.3l5.7-1.4l2.4,7.3L140.6,25.3z%20M153.8,15.8h-10l-3.1-9.5l-3.1,9.5h-10l8.1,5.9l-3.1,9.5l8.1-5.9l5-3.6L153.8,15.8z%20M181.3,25.3l5.7-1.4l2.4,7.3L181.3,25.3z%20M194.4,15.8h-10l-3.1-9.5l-3.1,9.5h-10l8.1,5.9l-3.1,9.5l8.1-5.9l5-3.6L194.4,15.8z'/%3e%3c/g%3e%3c/svg%3e"
+                                        class="h-30px" alt="rating-img">
+                                    <h6 class="font-base fw-bold heading-color ms-1 mb-0">4.8/5.0</h6>
+                                </div>
+                                <p class="text-dark small mb-0 mt-2">Review by 365 users</p>
+                            </div>
+                            <figure class="position-absolute top-0 end-0 mt-n7 me-lg-n5"><svg width="120.4px"
+                                    height="124.5px" viewBox="0 0 120.4 124.5" xml:space="preserve">
+                                    <path class="fill-mode"
+                                        d="M92.9,58.4c-0.2-4.7-1.8-9-5-12.6c-3-3.3-6.4-6.2-10.4-8.4c-3.4-1.9-7-2.9-10.8-3.3c-3.1-0.4-6,0.2-8.6,1.8 c-6.5,3.8-11.5,9.1-14.6,16.1c-1.1,2.5-1.5,5.1-1.3,7.7c0.3,3.2,0.9,6.4,2.1,9.4c2.1,5.4,5.7,9.4,11.5,11c1.8,0.5,3.5,1,5.3,1.6 c2.1,0.7,4.3,0.8,6.5,0.5c2.4-0.3,4.8-0.8,7.1-1.4c1.8-0.5,3.4-1.5,4.6-2.9c2-2.2,3.9-4.6,5.2-7.3c0.7-1.4,1.3-3,1.6-4.5 c1.1-6.4-0.7-12.1-4.5-17.2c-1.8-2.5-4.3-4.2-7.2-5c-3-0.8-6.1-1.1-9.2-0.8c-4.5,0.4-8.4,2.2-11.4,5.7c-2.1,2.4-3.6,5-4.3,8.1 c-0.6,2.4-0.5,4.8-0.6,7.2c-0.2,5.8,6.2,12.5,12.3,12c2.7-0.2,5.5-0.5,8.2-0.7c5.4-0.5,9.3-4.9,9.8-9.6c0.2-1.9,0.2-3.9,0.1-5.8 c-0.1-2.5-1.3-4.6-3.1-6.3c-3.1-2.9-6.8-4.1-11.1-3.7c-2.4,0.2-4.4,1.2-5.8,3.2c-1.8,2.5-2.8,5.3-3.1,8.3c-0.2,1.9,0.3,3.7,1.9,5 c2.7,2.2,5.8,3.3,9.2,3c1.6-0.1,2.8-0.9,3.8-2.2c1.6-2.1,1.6-4.5,1.1-6.9c-1-4.3-4.6-5.5-8.2-2.9c-0.3,0.2-0.4,0.7-0.6,1.1 c0.1,0.1,0.3,0.3,0.4,0.4c0.9-0.4,1.8-0.9,2.8-1.2c1-0.3,2-0.1,2.8,0.7c1.6,1.8,1.9,5.4,0.5,7.4c-0.9,1.2-2.1,1.9-3.5,1.8 c-2.3-0.1-4.5-0.9-6.4-2.3c-1.3-1-1.8-2.3-1.7-3.9c0.2-1.7,0.7-3.4,1.4-4.9c1.8-3.6,4-4.9,8.1-4.4c0.9,0.1,1.8,0.3,2.7,0.6 c4.5,1.7,6.8,5,6.6,9.8c0,1.4-0.2,2.8-0.5,4.1c-0.9,3.2-2.9,5.5-6.3,6.1c-2.9,0.5-5.9,0.7-8.9,0.9c-5.6,0.4-10.5-5.4-10.3-9.9 c0.1-2.1,0.2-4.1,0.6-6.1c1.5-6.9,7.2-11.6,14.2-11.9c1.7-0.1,3.5,0,5.2,0.2c3.5,0.4,6.4,1.9,8.5,4.7c3.1,4.2,4.6,8.9,4.2,14.2 c-0.3,3.5-2.1,6.2-4,9c-2.1,3-4.7,5-8.4,5.4c-1.1,0.1-2.3,0.4-3.4,0.7c-2,0.5-3.9,0.4-5.8-0.1c-2.3-0.6-4.6-1.3-6.9-2 c-3.1-1-5.4-3-7.1-5.7c-2.7-4.3-3.8-9.1-3.8-14.1c0-2,0.6-3.8,1.5-5.6c2.9-6,7.3-10.5,12.9-14c2.2-1.4,4.7-1.9,7.3-1.6 c4.2,0.4,8.1,1.6,11.6,3.9c3.1,2,5.8,4.5,8.3,7.2c1.7,1.9,2.9,4.1,3.6,6.6c1.5,5,1.1,10.1-0.2,15c-2.2,8-9.4,14.2-17.5,15.9 c-1.7,0.4-3.3,0.9-4.9,1.5c-1.1,0.4-1.6,1.4-1.2,2.1c0.5,0.8,1.4,0.7,2.1,0.5c2.5-0.7,5.1-1.3,7.6-2.2c1.4-0.5,2.8-1.1,4-1.9 c2.9-1.7,5.4-3.9,7.6-6.4c2.6-3,4.5-6.5,5.2-10.4C92.8,65.1,93,61.7,92.9,58.4z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M98.2,97.6c-1.9-3-3.8-6-5.7-9c-0.7-1-1.2-2.2-3-3c0,0.8-0.1,1.3,0,1.7c0.4,0.9,1,1.8,1.5,2.7 c2.8,5,5.7,9.9,9.2,14.5c1,1.2,2.2,2.3,3.4,3.4c0.3,0.3,0.8,0.4,1.2-0.3c-0.5-0.8-1.1-1.8-1.8-2.7C101.4,102.3,99.7,100,98.2,97.6z ">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M75.3,98c-0.5-1.5-1.2-3-1.9-4.4c-0.1-0.3-0.6-0.4-0.9-0.6c-0.2,0.2-0.3,0.3-0.5,0.5c0.1,0.5,0.2,1.1,0.4,1.6 c1.6,5.3,3.1,10.5,4.8,15.8c0.5,1.6,1.1,3.3,1.7,4.9c0.5,1.3,1.4,1.8,1.9,1.4c0.8-0.6,0.5-1.4,0.2-2.2C79,109.3,77.2,103.6,75.3,98 z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M26.5,69.5c-5.5,1.6-11,3.2-16.5,4.8c-2.1,0.6-4.1,1.4-6.1,2.2c-0.6,0.2-1.1,0.7-1.9,1.2 c5.9-0.4,24.8-6,28.2-8.3C28.8,68.8,27.6,69.2,26.5,69.5z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M55,96.3c-2.2,7.9-4.5,15.8-6.7,23.8c-0.3,1.2-0.4,2.5-0.7,4.4c0.6-0.9,0.8-1.2,0.9-1.5 c2.6-7.8,5.1-15.7,7.6-23.5c0.3-1.1,0.5-2.2,0.6-3.4c0-0.4-0.4-0.9-0.8-1.7C55.5,95.3,55.2,95.8,55,96.3z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M25.2,48.7c0.6,0.3,1.3,0.5,2,0.6c0.5,0.1,1.1-0.1,1.6-0.2c0-0.2,0-0.3,0-0.5c-3-1.4-6-3-9-4.2 c-3.2-1.3-6.4-2.4-9.7-3.5c-3.1-1-6.1-2.3-10-2.8c0.8,0.7,1.1,1.1,1.5,1.3c1.5,0.7,2.9,1.3,4.4,1.9C12.4,43.6,18.9,45.7,25.2,48.7z ">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M38.2,86.5c-0.7,0.3-1.4,0.8-2,1.3c-5.1,4.5-10.1,9-14.5,14.2c-0.9,1-1.6,2.2-2.5,3.3c0.1,0.1,0.2,0.3,0.4,0.4 c6.7-6.2,13.4-12.3,20.1-18.5c0.1-0.1,0-0.4,0-0.9C39.2,86.4,38.6,86.3,38.2,86.5z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M106.5,77.4c-1.1-1.1-2.4-2.2-3.6-3.1c-0.7-0.5-1.6-0.8-2.5-1c-0.5-0.1-1.2,0-1,1.1c2.1,0.8,3.6,2.5,5.2,4.1 c1.3,1.3,2.4,2.7,3.8,3.9c1.8,1.5,3.8,3,5.7,4.3c1,0.7,2.2,1.3,4.1,0.7c-0.7-0.7-1.1-1.1-1.5-1.4C112.9,83.6,109.6,80.5,106.5,77.4 z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M33.5,27.3c0.7,0.7,1.6,1.3,2.5,1.8c0.5,0.3,1.3,0.4,1.9,0.5c-2.3-2.2-4-4.6-6-6.8c-3.5-3.8-7-7.6-10.5-11.3 c-0.4-0.4-0.7-0.9-1.4-0.6c-0.5,0.6-0.1,1.1,0.3,1.5C24.6,17.4,29.1,22.4,33.5,27.3z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M53.3,20c0.1,1.1,0.3,2.3,0.6,3.4c0.1,0.4,0.7,0.6,1.3,1c-0.1-3.1-0.1-5.8-0.3-8.5c-0.1-2.6-0.4-5.2-0.6-7.9 c-0.4-5-0.6-5.7-2-8c0,0.9-0.1,1.6-0.1,2.2C52.6,8.2,52.9,14.1,53.3,20z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M101.1,56.2c0.2,0.4,0.3,0.7,0.5,0.7c4.9,1.1,9.8,2.2,14.7,3.1c1.3,0.3,2.7,0.4,4.1-0.5 c-0.8-0.3-1.7-0.6-2.5-0.8c-5.2-0.9-10.3-1.9-15.5-2.7C102,56,101.6,56.1,101.1,56.2z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M97.8,36.8c4.7-1.9,8.9-4.8,12.6-8.3c0.3-0.3,0.7-0.6,0.1-1.3c-2.5,1.7-5.1,3.5-7.7,5.1 c-2.6,1.6-5.3,3-8.1,4.6C95.9,37.7,96.8,37.2,97.8,36.8z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M81.6,11.5c0.5-1.6,0.8-3.2,1.2-4.8c-0.3,0.2-0.6,0.3-0.7,0.5c-1.6,4.3-3.2,8.5-4.7,12.8 c-0.2,0.6-0.1,1.3-0.2,1.9C79.1,18.6,80.5,15.1,81.6,11.5z">
+                                    </path>
+                                    <path class="fill-primary"
+                                        d="M82.8,6.5c0,0,0,0.1,0,0.1C82.8,6.6,82.8,6.6,82.8,6.5C82.9,6.6,82.8,6.5,82.8,6.5z">
+                                    </path>
+                                </svg></figure><img src="/mizzle_ng/assets/17-sDigSy8T.jpg" class="rounded"
+                                alt="feature-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

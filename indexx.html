@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Visibility Example</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+    .visible {
+      display: block;
+    }
+    .toggle-div {
+      padding: 20px;
+      margin: 10px;
+      background-color: lightgray;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1" class="toggle-div">Click me to toggle div visibility</div>
+  <div id="div2" class="toggle-div">Click me to toggle div visibility</div>
+
+  <div id="content1" class="visible">This is Content 1</div>
+  <div id="content2" class="hidden">This is Content 2</div>
+
+  <script>
+    const div1 = document.getElementById('div1');
+    const div2 = document.getElementById('div2');
+    const content1 = document.getElementById('content1');
+    const content2 = document.getElementById('content2');
+
+    div1.addEventListener('click', () => {
+      // When div1 is clicked, show content1 and hide content2
+      content1.classList.remove('hidden');
+      content1.classList.add('visible');
+      content2.classList.remove('visible');
+      content2.classList.add('hidden');
+    });
+
+    div2.addEventListener('click', () => {
+      // When div2 is clicked, show content2 and hide content1
+      content2.classList.remove('hidden');
+      content2.classList.add('visible');
+      content1.classList.remove('visible');
+      content1.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
