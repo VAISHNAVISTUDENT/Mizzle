@@ -58,7 +58,7 @@ export default function Component4(){
         className="bg-light border rounded-2 position-relative z-index-2 p-2 mb-2"
         style={{
           height: "40px !important",
-          width: 500,
+          width: '85%',
           display: "flex !important",
           flexDirection: "column !important",
           alignItems: "center !important",

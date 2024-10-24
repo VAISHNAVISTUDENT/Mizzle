@@ -233,7 +233,8 @@ export default function Home() {
                     style={{
                       display: "flex",
                       flexDirection: "row",
-                      transform: "translate(70px, 5px)"
+                      transform: "translate(70px, 5px)",
+                      
                     }}
                   >
                     <p className="text-dark fw-bold mb-0">Meeting with</p>
@@ -267,7 +268,7 @@ export default function Home() {
                     {/**/}
                     {/**/}
                     {/**/}
-                    <div className="card-body " style={{border:'none !important'}}>
+                    <div className="card-body responsive-element" style={{border:'none !important'}}>
                       {/**/}
                       {/**/}
                       <p>Our lovely customers</p>
@@ -746,11 +747,11 @@ export default function Home() {
                       </li>
                     </ul>
                   </div>
-                  <div className="card position-absolute bottom-0 start-0 ms-lg-n8 mb-n5" >
+                  <div className="card position-absolute bottom-0 start-0 ms-lg-n8 mb-n5 responsive-element" >
                     {/**/}
                     {/**/}
                     {/**/}
-                    <div className="card-body" style={{border:'none !important'}} >
+                    <div className="card-body " style={{border:'none !important'}} >
                       {/**/}
                       {/**/}
                       <p>Our lovely customers</p>
@@ -912,7 +913,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="btn btn-light"
+                    className="btn btn-light mb-3"
                     href="#"
                   >
                     Explore collaboration benefits{" "}
@@ -1040,9 +1041,9 @@ export default function Home() {
     .visible {
     display: block !important;
       }
-    @media (max-width: 700px) {
+    @media (max-width: 683px) {
   .responsive-element {
-    display: none;
+    display: none !important;
   }
 }
       `}</style>
